@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+
+@import url("index_header.css");
+@import url("index_nav.css");
+@import url("index_main.css");
+@import url("index_footer.css");
+
+.page_template{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "nv mn mn mn mn mn"
+    "nv mn mn mn mn mn"
+    "nv mn mn mn mn mn"
+    "nv mn mn mn mn mn"
+    "ft ft ft ft ft ft"
+    ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Times New Roman';
+    color: #333;
+}
+
+.fi-rr-angle-circle-right{
+    transform: translate(5px, -4px);
+    font-size: 25px;
+    max-height: 5px;
+    text-shadow: 0 0 8px;
+}
+
+.fi-rr-search{
+    color: #eee;
+    font-size: 25px;
+}
+
+p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: initial;
+    overflow-wrap: break-word;
+}
+
+h3{
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media(max-width: 1175px){
+
+    .page_template{
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "nv nv nv nv nv nv"
+        "mn mn mn mn mn mn"
+        "mn mn mn mn mn mn"
+        "mn mn mn mn mn mn"
+        "ft ft ft ft ft ft"
+        ;
+    }
+
+    #header_text{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    
+    .nav{
+        min-height: 0;
+        height: 70px;
+        width: 100%;
+        border-bottom: ridge 5px lightgrey;
+    }
+    
+    .side_bar{
+        display: none;
+    }
+
+    .nav_bar{
+        flex-direction: row;
+    }
+
+    .nav_button:active{
+        transform: translate(0);
+        background-color: rgba(0, 50, 255, 0.7);
+    }
+
+    .footer_card{
+        width: 85%;
+    }
+}
+
+@media(max-width: 885px){
+
+    .footer_links{
+        margin: 20px 0 0 0;
+    }
+}
+
+@media(max-width: 600px){
+    
+    .footer_links{
+        margin: -25px 0 0 0;
+    }
+
+    .link{
+        font-size: 10px;
+    }
+}

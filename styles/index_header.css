@@ -1,0 +1,40 @@
+header{
+    grid-area: hd;
+    position: relative;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: grid;
+    margin: -12px;
+    align-items: center;
+    grid-template-columns: 60px 1fr 50px;
+    background: linear-gradient(180deg, blue, rgb(0, 165, 255));
+    box-shadow: 0 1px 10px grey;
+}
+
+#header_logo{
+    max-width: 25px;
+    padding: 20px 30px;
+}
+
+#header_text{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #eee;
+    font-size: 34px;
+    text-shadow: 0px 1px 5px #000;
+}
+
+#header_button{
+    background: none;
+    width: 40px;
+    padding-top: 5px;
+    border: none;
+    cursor: pointer;
+    transform: translate(-20px, 5px);
+    transition-duration: 0.2s;
+}
+
+#header_button:active{
+    transform: translate(-18px, 8px);
+}
+

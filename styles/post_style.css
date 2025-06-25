@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+@import url("post_header.css");
+@import url("post_nav.css");
+@import url("post_main.css");
+@import url("post_footer.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Times New Roman';
+    color: #333;
+}
+
+.page_template{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 185px repeat(5, 1fr);
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "nv nv nv nv nv nv"
+    "mn mn mn mn mn mn"
+    "mn mn mn mn mn mn"
+    "mn mn mn mn mn mn"
+    "ft ft ft ft ft ft"
+    ;
+}
+
+.fi-rr-search{
+    font-size: 25px;
+    color: #eee;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media(max-width: 800px){
+
+    #header_text{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    main{
+        grid-area: mn;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:
+        "ti ti ti ti ti"
+        "im im im im im"
+        "mn mn mn mn mn"
+        "ft ft ft ft ft"
+        ;
+    }
+
+    .main_content{
+        margin-top: 0;
+    }
+
+    .post_title{
+        width: 90%;
+    }
+
+    .author_card{
+        display: none;
+    }
+
+    .author_image{
+        display: inline;
+    }
+
+    .list_title{
+        display: none;
+    }
+
+    .image_list{
+        display: none;
+    }
+
+    .main_image{
+        margin-bottom: 0;
+        width: 95%;
+        max-width: none;
+    }
+
+    .mobile_author_name{
+        display: inline;
+    }
+
+    .mobile_author_school{
+        display: inline;
+    }
+
+    figcaption{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 1175px){
+
+.footer_card{
+        width: 85%;
+    }
+}
+
+@media(max-width: 885px){
+
+    .footer_links{
+        margin: 20px 0 0 0;
+    }
+}
+
+@media(max-width: 600px){
+    
+    .footer_links{
+        margin: -25px 0 0 0;
+    }
+
+    .link{
+        font-size: 10px;
+    }
+}
